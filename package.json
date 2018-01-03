@@ -1,18 +1,18 @@
 {
-  "name": "oshop",
-  "version": "0.0.0",
-  "license": "MIT",
+  "name": "mean",
+  "version": "1.0.0",
+  "description": "",
   "scripts": {
-    "ng": "ng",
-    "start": "ng serve",
-    "build": "ng build",
-    "test": "ng test",
-    "lint": "ng lint",
-    "e2e": "ng e2e"
+    "postinstall": "ng build --prod",
+    "start": "ng build | node server/server.js",
+    "test": "echo \"Error: no test specified\" && exit 1"
   },
-  "private": true,
+  "author": "",
+  "license": "ISC",
   "dependencies": {
     "@angular/animations": "^5.0.0",
+    "@angular/cli": "1.5.2",
+    "@angular/compiler-cli": "^5.0.0",
     "@angular/common": "^5.0.0",
     "@angular/compiler": "^5.0.0",
     "@angular/core": "^5.0.0",
@@ -23,7 +23,13 @@
     "@angular/router": "^5.0.0",
     "core-js": "^2.4.1",
     "rxjs": "^5.5.2",
-    "zone.js": "^0.8.14"
+    "zone.js": "^0.8.14",
+    "express": "^4.16.2",
+    "mongodb": "^3.0.0-rc0",
+    "cors": "^2.8.4",
+    "body-parser": "^1.18.2",
+    "mongoose": "^5.0.0-rc1",
+    "typescript": "~2.4.2"
   },
   "devDependencies": {
     "@angular/cli": "1.5.2",
